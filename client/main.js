@@ -43,12 +43,16 @@ async function navigateTo(ViewClass) {
 
 // ─── Lógica de navegación por sesión ─────────────────────────────────────
 
+// Forzar la navegación al Dashboard para mostrar la nueva interfaz
+navigateTo(DashboardView);
+/*
 if (authStore.isAuthenticated) {
   navigateTo(DashboardView)
 } else {
   // La Landing es ahora la página principal para usuarios no autenticados
   navigateTo(LandingView)
 }
+*/
 
 // ─── Eventos globales de navegación ──────────────────────────────────────
 
